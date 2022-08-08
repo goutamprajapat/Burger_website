@@ -19,6 +19,7 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: all .2s linear;
+  list-style: none;
 }
 
 html {
@@ -58,8 +59,9 @@ body.active {
 .heading {
   text-align: center;
   padding-bottom: 2rem;
+  margin-top: 2rem;
   color: var(--text-color-1);
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .heading span {
@@ -89,7 +91,8 @@ body.active {
 }
 
 .btn:hover {
-  letter-spacing: .2rem;
+  background: var(--bg-color-2);
+  color: var(--text-color-1);
 }
 
 /* header section start */
@@ -356,12 +359,7 @@ body.active {
 
 /* packages section starts */
 
-.packages h1{
-  font-size: 1.5rem;
-}
-
-
-.box-container {
+.packages .box-container {
   /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1.5rem;
@@ -371,24 +369,24 @@ body.active {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.5rem;
-  box-shadow: var(--box-shadow);
   
 }
-.box-container .box{
+.packages .box-container .box{
   background: var(--bg-color-1);
   padding: 1.5rem;
   width: 45%;
+  box-shadow: var(--box-shadow);
 }
-.image{
+.packages .box-container .box .image{
   position: relative;
 }
-.image img{
+.packages .box-container .box .image img{
   border-radius: 1.5rem;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.image h3{
+.packages .box-container .box .image h3{
   position: absolute;
   top: 2rem;
   left: 2rem;
@@ -399,7 +397,7 @@ body.active {
   border-radius: .5rem;
   color: ligtner;
 }
-.image h3 i{
+.packages .box-container .box .image h3 i{
   color: var(--orange);
 }
 .packages .box-container .content .price{
@@ -418,9 +416,38 @@ body.active {
   /* .packages .box-container{
     grid-template-columns: repeat(1, 1fr);
   } ;*/
-  .box-container .box {
+  .packages .box-container .box {
     background: var(--bg-color-1);
     padding: 1.5rem;
     width: 90%;
   }
-};
+}
+
+  /* priceing plan start */
+.pricing .box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: .7rem;
+}
+.pricing .box-container .box{
+  line-height: 2rem;
+  text-align: center;
+  background: var(--bg-color-1);
+  padding: .8rem 2rem;
+  border-radius: .5rem;
+}
+.pricing .box-container .box h3{
+  background: var(--bg-color-2);
+  padding: .3rem 1%;
+  border-radius: .2rem;
+  font-size: .7rem;
+}
+.pricing .box-container .box ul li{
+  font-size: .7rem;
+}
+.pricing .box-container .box div{
+  font-weight: bolder;
+   font-size: .8rem;
+}

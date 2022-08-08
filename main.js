@@ -5,4 +5,4 @@ const navbar = document.querySelector('.navbar'),
   search = document.getElementById('search'),
   searchbtn = document.getElementById('search-btn').addEventListener('click', () => {
     search.classList.toggle('active');
-  })
+  });
