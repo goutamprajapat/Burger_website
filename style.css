@@ -426,7 +426,7 @@ body.active {
   /* priceing plan start */
 .pricing .box-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: stretch;
   flex-wrap: wrap;
   gap: .7rem;
@@ -450,4 +450,51 @@ body.active {
 .pricing .box-container .box div{
   font-weight: bolder;
    font-size: .8rem;
+}
+
+/*slider */
+.review .review-slider{
+    box-shadow: var(--box-shadow);
+    margin: 2rem;
+}
+
+.review .review-slider .slide{
+    background: var(--bg-color-1);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.review .review-slider .slide img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+
+.review .review-slider .slide h3{
+    font-size: 2rem;
+    color:var(--text-color-1);
+}
+
+.review .review-slider .slide p{
+    font-size: 1.2rem;
+    color:var(--text-color-2);
+    line-height: 1.7;
+    padding: 1rem 0;
+}
+
+.review .review-slider .slide .stars{
+    padding: 1rem 0;
+    padding-bottom: 1.5rem;
+}
+
+.review .review-slider .slide .stars i{
+    font-size: 1rem;
+    color:var(--orange);
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--orange);
 }
