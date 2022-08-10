@@ -498,3 +498,42 @@ body.active {
 .swiper-pagination-bullet-active{
     background: var(--orange);
 }
+/*contact us*/
+.contact .form_contact{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem;
+  
+  box-shadow: var(--box-shadow);
+}
+.form_contact .inputBox input {
+  margin-right: .5rem;
+  padding-left: .3rem;
+  border-radius: .5rem;
+  height: 2rem;
+}
+.form_contact textarea{
+  width: 22rem;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+.form_contact input[type="submit"] {
+  width: 22rem;
+}
+@media (max-width:768px){
+  .form_contact .inputBox input {
+  height: 3rem;
+  width: 90%;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  }
+.form_contact textarea{
+  width: 90%;
+  padding: .5rem;
+}
+.form_contact input[type="submit"] {
+  width: 90%;
+}
+}
