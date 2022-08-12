@@ -6,14 +6,14 @@ const navbar = document.querySelector('.navbar'),
   searchbtn = document.getElementById('search-btn').addEventListener('click', () => {
     search.classList.toggle('active');
   });
-  
-  
-  window.onscroll = () => {
+
+
+window.onscroll = () => {
   navbar.classList.remove('active');
   search.classList.remove('active');
 };
 
-  
+
 var swiper = new Swiper(".review-slider", {
   loop: true,
   spaceBetween: 30,
