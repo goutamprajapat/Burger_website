@@ -250,10 +250,10 @@ body.active {
 .home-img img {
   width: 100%;
   height: auto;
-  animation: 5s upd infinite;
+  animation: 5s img infinite;
 }
 
-@keyframes upd {
+@keyframes img {
   0% {
     transform: translateY(0rem);
     /* padding-bottom: 0rem; */
@@ -589,6 +589,7 @@ body.active {
 }
 
 .blogs .box-container .content h3 {
+  font-family: 'Tiro Devanagari Hindi', serif;
   font-size: 2rem;
   color: var(--text-color-2);
 }
