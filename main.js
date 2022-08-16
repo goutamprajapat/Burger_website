@@ -1,3 +1,9 @@
+const card = document.querySelector('.card');
+
+window.addEventListener('load', () => {
+  card.style.display = "none";
+});
+console.log();
 const navbar = document.querySelector('.navbar'),
   menu = document.getElementById('menubtn').addEventListener('click', () => {
     navbar.classList.toggle('active');
